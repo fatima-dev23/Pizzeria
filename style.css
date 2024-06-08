@@ -14,78 +14,78 @@
 .carousel1 h2 {
     color: red;
     font-family: "Nothing You Could Do", cursive;
-    position: absolute;
+    /* position: absolute;
     top: 30%;
-    left: 60%;
+    left: 60%; */
 }
 
 .carousel1 h1 {
     font-family: "Josefin Sans", sans-serif;
-    position: absolute;
+    /* position: absolute;
     top: 40%;
-    left: 30%;
+    left: 30%; */
 }
 
 .carousel2 h2 {
     color: red;
     font-family: "Nothing You Could Do", cursive;
-    position: absolute;
+    /* position: absolute;
     top: 30%;
-    right: 75%;
+    right: 75%; */
 }
 
 .carousel2 h1 {
     font-family: "Josefin Sans", sans-serif;
-    position: absolute;
+    /* position: absolute;
     top: 40%;
-    right: 67%;
+    right: 67%; */
 }
 
 .carousel2 p {
     margin-top: 8px;
     font-size: 20px;
-    position: absolute;
+    /* position: absolute;
     top: 50%;
-    right: 60%;
+    right: 60%; */
 }
 
 .carousel3 h2 {
     color: red;
     font-weight: bold;
     font-family: "Nothing You Could Do", cursive;
-    position: absolute;
+    /* position: absolute;
     top: 30%;
-    left: 75%;
+    left: 75%; */
 }
 
 .carousel3 h1 {
     font-family: "Josefin Sans", sans-serif;
-    position: absolute;
+    /* position: absolute;
     top: 40%;
-    left: 68%;
+    left: 68%; */
 }
 
 .carousel3 p {
     margin-top: 8px;
     font-size: 20px;
-    position: absolute;
+    /* position: absolute;
     top: 50%;
-    left: 60%;
+    left: 60%; */
 }
 
 .navbar .logo {
     color: red !important;
-    font-weight: bold !important;
     font-size: 20px !important;
 }
 
 nav ul li a {
     color: red !important;
+    font-weight: bold !important;
     font-size: 18px !important;
 }
 
 nav ul li a:hover {
-    color: white !important;
+    color: black !important;
     font-size: 18px !important;
 }
 
@@ -99,3 +99,23 @@ nav {
     background-color: white;
 }
 
+.ftco-intro .container-fluid{
+    display: flex;
+    background-color: red;
+}
+
+.ftco-intro .text{
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.ftco-intro .text h3{
+    font-size: 23px;
+
+}
+
+/* .row {
+    margin-right: 0px;
+    margin-left: 5px; 
+    color: white;
+} */
