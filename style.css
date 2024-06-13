@@ -137,3 +137,20 @@ nav {
 footer {
     margin-top: 50px;
 }
+
+
+.container{
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+body{
+    background-image: url(./pexels-cottonbro-3944308.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-style: italic;
+    font-family: josefin sans-serif;
+}
+    

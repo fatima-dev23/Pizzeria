@@ -1,0 +1,234 @@
+
+  <!DOCTYPE html >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pizza website helllo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-light ">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./logo bg.png" alt="" width="40" height="40">
+          </a>
+      <ul class="list-inline text-end m-3">
+        <li class="list-inline-item p-3"><b>Home</b></li>
+        <li class="list-inline-item p-3"><b>Menu</b></li>
+        <li class="list-inline-item p-3"><b>Deserts</b></li>
+        <li class="list-inline-item p-3"><b>Deal</b></li>
+        
+        <button class="btn btn-outline-danger me-2" type="button">
+          <b>Contact Us</b>
+        </button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+        </svg>
+      </ul>
+      <div class="container text-dark">
+        <h2 class="display-5">Contact us.</h2>
+        <div class="row">
+          <div class="col mt-4">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="First name"
+              aria-label="First name"
+            />
+          </div>
+          <div class="col mt-4">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Last name"
+              aria-label="Last name"
+            />
+          </div>
+        </div>
+        <div class="mb-3 mt-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+          </svg>
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Enter your email"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+        </div>
+
+        <div class="mb-3 mt-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+          </svg>
+          <label for="telephone" class="form-label">Telephone</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <select class="form-select mt-5" aria-label="Default select example ">
+          <option selected>Select the city</option>
+          <option value="1">Karachi</option>
+          <option value="2">lahore</option>
+          <option value="3">Islamabad</option>
+          <option value="3">Peshawar</option>
+        </select>
+
+        <div class="mb-3 mt-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
+            <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9 9 0 0 0 8 15"/>
+          </svg>
+          <label for="Message" class="form-label">Message</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            style="height: 50px"
+          />
+        </div>
+
+        <button class="btn btn-outline-dark m-4 mb-3" type="button">
+          <b>Submit Form</b>
+        </button>
+      </div>
+      <div class="container mt-3 p-3">
+        <MDBRow className="w-100 p-3">
+          <MDBCol lg="6" className="my-4 mt-3">
+            <iframe
+              src="https://www.google.com/maps/embed?q=pakistan"
+              className="w-500 m-4"
+              height="400"
+              width="100%"
+              loading="lazy"
+            ></iframe>
+          </MDBCol>
+        </MDBRow>
+        
+      </div>
+<div class="container mt-4  p-5  mb-5">
+  <img src="logo.png" class="rounded mx-auto d-block" alt="..." width="70px" height="90px">
+<div class="text d-flex justify-content-between">
+  <div>
+    <h1 class="display-6 m-4"><b>ADDRESS</b></h1>
+  <p class="lead">
+    570 8th Ave,New York, Ny </br>
+    10018 United States
+  </p>
+ </div>
+  <div><h1 class="display-6 text-center  m-4"><b>BOOK A TABLE</b></h1>
+    <p class="lead text-center">
+      Dogfood Och Sliders Foodtruck. </br>
+      Under Om Oss Kan Ni Lasa
+    </p>
+  </div>
+  <div> <h1 class="display-6   m-4 me-3"><b>OPENING HOURS</b></h1>
+    <p class="lead text-center">
+      Monday_Friday. </br>
+      10.00 AM - 11.00 PM
+      
+    </p>
+  </div>
+ 
+
+ 
+  </div>
+</div>
+  
+
+      
+    </header>
+    <footer class="text-danger text-center text-lg-start row" style="background-color: #efefef; font-family:Josefin Sans, sans-serif;">
+      <div class="container p-4">
+        <div class="row mt-4">
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Pizzalicious</h5>
+            <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+              voluptatum deleniti atque corrupti.
+            </p>
+  
+            <p>
+              Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+              molestias.
+            </p>
+  
+            <div class="mt-4">
+              <a type="button" class="btn btn-floating btn-light btn-md rounded-5"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+
+              <a type="button" class="btn btn-floating btn-light btn-md rounded-5"><i class="fab fa-instagram"></i></a>
+              <a type="button" class="btn btn-floating btn-light btn-md rounded-5"><i class="fab fa-twitter"></i></a>
+              <a type="button" class="btn btn-floating btn-dark btn-md rounded-5"><i class="fab fa-google"></i></a>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+  
+            <div class="form-outline form-white mb-4">
+              <input type="text" id="formControlLg" class="form-control form-control-lg">
+              <label class="form-label" for="formControlLg" style="margin-left: 0px;">Search</label>
+            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 48.8px;"></div><div class="form-notch-trailing"></div></div></div>
+  
+            <ul class="fa-ul" style="margin-left: 1.65em;">
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Karachi, KHI 10012, PK</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">info@pizzalicious.com</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 021 234 567 88</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 021 234 567 89</span>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Opening hours</h5>
+  
+            <table class="table text-center text-dark bg-white">
+              <tbody class="font-weight-normal">
+                <tr>
+                  <td>Mon - Thu:</td>
+                  <td>8am - 11pm</td>
+                </tr>
+                <tr>
+                  <td>Fri - Sat:</td>
+                  <td>8am - 2am</td>
+                </tr>
+                <tr>
+                  <td>Sunday:</td>
+                  <td>9am - 2am</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+  
+      </div>
+  
+      <div class="text-center p-3" style="background-color: #efefef;">
+        © 2024 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">Pizzalicious.com</a>
+      </div>
+    </footer>
+  </body>
+</html>
