@@ -177,3 +177,10 @@ footer {
     font-family: "Josefin Sans", sans-serif;
 }
     
+body{
+    background-image: url(./background\ image.jpeg);
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+    background-size: cover;
+    
+}
