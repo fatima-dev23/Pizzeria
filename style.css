@@ -141,7 +141,7 @@ footer {
 /* Desserts Page*/
 #banner{
     height: 300px;
-    background: url(./assets/banner.jpeg) center/cover no-repeat;
+    background: url(./assets/desserts-top.jpg) center/cover no-repeat;
     font-family: "Josefin Sans", sans-serif;
 }
 .ban-container{
@@ -177,10 +177,13 @@ footer {
     font-family: "Josefin Sans", sans-serif;
 }
     
-body{
-    background-image: url(./background\ image.jpeg);
+.deals{
+    background-image: url("./assets/deals-background.jpg");
     background-repeat: no-repeat;
     background-attachment:fixed ;
-    background-size: cover;
-    
+    background-size:cover;
+    font-family: "Josefin Sans", sans-serif;
+    color: #8A0000;
+    text-shadow: white 3px 4px;
+    font-weight: bold;
 }

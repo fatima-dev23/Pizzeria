@@ -1,142 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="./deal_files/bootstrap.min.css" rel="stylesheet"
- integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-  crossorigin="anonymous"><link rel="stylesheet" href="./deal_files/style.css" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzalicious</title>
+  <link rel="icon" href="./assets/logo-transparent.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Josefin Sans', sans-serif;
+      color: #8A0000;
+      background-color: #f7f7f7;
+    }
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .navbar-brand img {
+      height: 40px;
+      width: 40px;
+    }
+    .nav-link {
+      color: #8A0000;
+      font-weight: bold;
+    }
+    .nav-link:hover {
+      color: #C21807;
+    }
+    .nav-link.active {
+      color: #C21807;
+    }
+    .icons .nav-link svg {
+      fill: #8A0000;
+    }
+    .deals h1 {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      font-family: 'Nothing You Could Do', cursive;
+    }
+    .card-group {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      flex: 1 1 30%;
+      max-width: 30%;
+    }
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-body {
+      text-align: center;
+      background-color: #ffffff;
+    }
+    .card-title {
+      color: #C21807;
+    }
+    .card-text small {
+      color: #C21807;
+    }
+    .btn-outline-danger {
+      color: #C21807;
+      border-color: #C21807;
+    }
+    .btn-outline-danger:hover {
+      background-color: #C21807;
+      color: #ffffff;
+    }
+    footer {
+      background-color: #efefef;
+      padding: 40px 0;
+    }
+    footer h5 {
+      color: #8A0000;
+    }
+    footer p, footer a {
+      color: #6C757D;
+    }
+    footer a:hover {
+      color: #8A0000;
+    }
+    .form-control:focus {
+      border-color: #C21807;
+      box-shadow: none;
+    }
+    table {
+      color: #8A0000;
+    }
+  </style>
 </head>
 
 <body>
-    <ul class="list-inline text-end m-4">
-        <li class="list-inline-item"><b>Home</b></li>
-        <li class="list-inline-item"><b>Desserts</b></li>
-        <button class="btn btn-outline-danger me-3" type="button"><b>Deals</b></button>
-        <li class="list-inline-item"><b>Contact us</b></li>
-      </ul>
-      <h1 class="display-4 text-center"><u>EVERYDAY VALUE DEALS</u></h1>
-      <div class="card-group">
-        <div class="card">
-          <img src="./assets/pizza drink.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">EVERYDAY VALUE MEDIUM</h5>
-            <p class="card-text">01 Medium Pizza With coke</p>
-            <p class="card-text"><small class="text-muted"><b>Rs. 1099</b></small></p>
-            <button class="btn btn-outline-info me-3" type="button"><b>Add</b></button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./assets/large pizza.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">EVERYDAY VALUE LARGE</h5>
-            <p class="card-text">01 Large Pizza</p>
-            <p class="card-text"><small class="text-muted"><b>Rs. 1499</b></small></p>
-            <button class="btn btn-outline-info me-3" type="button"><b>Add</b></button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./assets/biscuit pizza.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">EVERYDAY VALUE SMALL</h5>
-            <p class="card-text">01 Small Biscuit Pizza</p>
-            <p class="card-text"><small class="text-muted"><b>Rs. 1200</b></small></p>
-            <button class="btn btn-outline-info me-3" type="button"><b>Add</b></button>
-          </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <div class="container-fluid">
+      <a href="./index.html" class="navbar-brand logo ms-4">
+        <img src="./assets/logo-transparent.png" alt="Pizzalicious">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-3">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="./menu.html">Menu</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="./deals.html">Deals</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="./deserts.html">Desserts</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <div class="d-flex icons">
+          <a href="#" class="nav-link me-4"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8A0000"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg></a>
+          <a href="#" class="nav-link me-4"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8A0000"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></a>
         </div>
       </div>
-      <h1 class="display-4 text-center m-4"><u>EVERYDAY ICECREAMS DEALS</u></h1>
-      <div class="card-group">
-        <div class="card">
-          <img src="./assets/strawberry icecream copy 2.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">EVERYDAY STRAWBERRY ICECREAM</h5>
-            <p class="card-text">01 Strawberry Icecream</p>
-            <p class="card-text"><small class="text-muted"><b>Rs. 530</b></small></p>
-            <button class="btn btn-outline-info me-3" type="button"><b>Add</b></button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./assets/choco icecream.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">EVERYDAY CHOCOLATE ICECREAM</h5>
-            <p class="card-text">01 Chocolate Icecream</p>
-            <p class="card-text"><small class="text-muted"><b>Rs. 485</b></small></p>
-            <button class="btn btn-outline-info me-3" type="button"><b>Add</b></button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./assets/vanilla icecream.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">EVERYDAY VANILLA ICECREAM</h5>
-            <p class="card-text">01 Vanilla Icecream</p>
-            <p class="card-text"><small class="text-muted"><b>Rs. 480</b></small></p>
-            <button class="btn btn-outline-info me-3" type="button"><b>Add</b></button>
-          </div>
-        </div>
-      </div>
-      <h1 class="display-4 text-center m-4"><u>EVERYDAY CAKE DEALS</u></h1>
-      <div class="card-group">
-        <div class="card">
-          <img src="./assets/chocolate cake ss copy.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">CHOCOLATE CAKE</h5>
-            <p class="card-text">01 Chocolate cake</p>
-            <p class="card-text"><small class="text-muted"><b>Rs. 530</b></small></p>
-            <button class="btn btn-outline-info me-3" type="button"><b>Add</b></button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./deal_files/vanilla ice cake.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">DAIRY QUEEN ICECREAM CAKE</h5>
-            <p class="card-text">01 Dairy Queen Icecream Cake</p>
-            <p class="card-text"><small class="text-muted"><b>Rs. 1000</b></small></p>
-            <button class="btn btn-outline-info me-3" type="button"><b>Add</b></button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./assets/strawberry copy.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">STRAWBERRY ICE CAKE</h5>
-            <p class="card-text">01 Strawberry Ice Cake</p>
-            <p class="card-text"><small class="text-muted"><b>Rs. 1200</b></small></p>
-            <button class="btn btn-outline-info me-3" type="button"><b>Add</b></button>
-          </div>
-        </div>
-      </div><div class="card-group">
-        <div class="card">
-          <img src="./assets/pizza burger.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">LARGE PIZZA WITH BURGER</h5>
-            <p class="card-text">01 Large Pizza With Burger </p>
-            <p class="card-text"><small class="text-muted"><b>Rs. 1199</b></small></p>
-            <button class="btn btn-outline-info me-3" type="button"><b>Add</b></button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./assets/piiza nuggets copy.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">MEDIUM PIZZA WITH NUGGETS</h5>
-            <p class="card-text">01 Medium Pizza With Nuggets</p>
-            <p class="card-text"><small class="text-muted"><b>Rs. 1399</b></small></p>
-            <button class="btn btn-outline-info me-3" type="button"><b>Add</b></button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./assets/pizza pepperoni sticks.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">PIZZA PEPPERONI MOZERELLA STICKS</h5>
-            <p class="card-text">05 Pieces Of Pizza Pepperoni Mozerella Sticks</p> 
-            <p class="card-text"><small class="text-muted">1199</small></p>
-            <button class="btn btn-outline-info me-3" type="button"><b>Add</b></button>
-          </div>
-        </div>
-      </div>
-    
-    
+    </div>
+  </nav>
 
+  <div class="deals">
+    <h1 class="display-4 text-center"><u>EVERYDAY VALUE DEALS</u></h1>
+    <div class="card-group mt-4">
+      <div class="card">
+        <img src="./assets/pizza nuggets.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">EVERYDAY VALUE REGULAR</h5>
+          <p class="card-text">1 Regular pizza + 500 ml drink</p>
+          <p class="card-text"><small class="text-muted">Price: $9.99</small></p>
+          <a href="#" class="btn btn-outline-danger">Order Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./assets/pizza burger.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">EVERYDAY VALUE MEDIUM</h5>
+          <p class="card-text">1 Medium pizza + 500 ml drink</p>
+          <p class="card-text"><small class="text-muted">Price: $15.99</small></p>
+          <a href="#" class="btn btn-outline-danger">Order Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./assets/large pizza.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">EVERYDAY VALUE LARGE</h5>
+          <p class="card-text">1 Large pizza</p>
+          <p class="card-text"><small class="text-muted">Price: $19.99</small></p>
+          <a href="#" class="btn btn-outline-danger">Order Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-group mt-4">
+      <div class="card">
+        <img src="./assets/biscuit pizza.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">EVERYDAY VALUE COMBO</h5>
+          <p class="card-text">1 Large pizza + 2 Sides</p>
+          <p class="card-text"><small class="text-muted">Price: $25.99</small></p>
+          <a href="#" class="btn btn-outline-danger">Order Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./assets/pizza nuggets.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">EVERYDAY VALUE PARTY</h5>
+          <p class="card-text">2 Large pizzas + 4 Sides + 1.5L drink</p>
+          <p class="card-text"><small class="text-muted">Price: $49.99</small></p>
+          <a href="#" class="btn btn-outline-danger">Order Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./assets/pizza drink.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">EVERYDAY VALUE FAMILY</h5>
+          <p class="card-text">2 Medium pizzas + 4 Sides + 1.5L drink</p>
+          <p class="card-text"><small class="text-muted">Price: $39.99</small></p>
+          <a href="#" class="btn btn-outline-danger">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div>
+    <footer class="text-danger text-center text-lg-start d-flex row" style="background-color: #efefef; font-family:Josefin Sans, sans-serif;">
+      <div class="container p-4">
+        <div class="row mt-4">
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Pizzalicious</h5>
+            <p>
+              This page is created by Warisha.
+            </p>
+  
+            <p>
+              Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+              molestias.
+            </p>
+  
+            <div class="mt-4">
+              <a type="button" class="btn btn-floating btn-light btn-md rounded-5"><i class="fab fa-facebook-f"></i></a>
+              <a type="button" class="btn btn-floating btn-light btn-md rounded-5"><i class="fab fa-instagram"></i></a>
+              <a type="button" class="btn btn-floating btn-light btn-md rounded-5"><i class="fab fa-twitter"></i></a>
+              <a type="button" class="btn btn-floating btn-light btn-md rounded-5"><i class="fab fa-google"></i></a>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+  
+            <div class="form-outline form-white mb-4">
+              <input type="text" id="formControlLg" class="form-control form-control-lg">
+              <label class="form-label" for="formControlLg" style="margin-left: 0px;">Search</label>
+            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 48.8px;"></div><div class="form-notch-trailing"></div></div></div>
+  
+            <ul class="fa-ul" style="margin-left: 1.65em;">
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Karachi, KHI 10012, PK</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">info@pizzalicious.com</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 021 234 567 88</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 021 234 567 89</span>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Opening hours</h5>
+  
+            <table class="table text-center text-white">
+              <tbody class="font-weight-normal">
+                <tr>
+                  <td>Mon - Thu:</td>
+                  <td>8am - 11pm</td>
+                </tr>
+                <tr>
+                  <td>Fri - Sat:</td>
+                  <td>8am - 2am</td>
+                </tr>
+                <tr>
+                  <td>Sunday:</td>
+                  <td>9am - 2am</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+  
+      </div>
+  
+      <div class="text-center p-3" style="background-color: #efefef;">
+        © 2024 Copyright:
+        <a class="text-dark" href="https://getbootstrap.com/">Pizzalicious.com</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-wH4gLuvlR6xv/9K3/8Pij4a7GS51KJ8Asnl7JJOJxe9H2LAyBz2fZwhdUgQj10/E" crossorigin="anonymous"></script>
 </body>
 </html>
